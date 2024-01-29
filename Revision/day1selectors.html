@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+
+
+    <style>
+
+        * {
+            /* universal selector */
+            text-align: center;
+            
+
+        }
+
+      p {
+       background-color: aquamarine;
+      }
+
+      #p2 {
+        background-color: aqua;
+      }
+      
+      .pcommon {
+        background-color: blueviolet;
+      }
+
+      p#p2 {
+        color: white;
+      }
+
+      .class1
+      {
+        border: 2px solid black;
+      }
+      .class2
+      {
+        text-decoration: dotted;
+        color:cornflowerblue;
+      }
+
+      .class1,.class2 {
+        
+        text-align: right;
+        
+      }
+     
+      .class1:hover
+      {
+        color:blue;
+      }
+
+      /* :first-child	p:first-child	Selects every <p> element that is the first child of its parent */
+        .parent p:first-child {
+            color: chartreuse;
+        }
+        .parent p:last-child {
+            color: brown;
+        }
+
+        .parent p:nth-child(2)
+        {
+            color:cornflowerblue;
+        }
+   
+        div p {
+            /* Selects all <p> elements inside <div> elements */
+            color: rgb(57, 13, 188);
+        }
+
+        div > p
+        {
+            color:red;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+
+ 
+    
+    <p>
+        Lorem ipsum dolor, sit amet consectetur
+         adipisicing elit. Deserunt, blanditiis!
+    </p>
+
+    <p id="p2">
+       Lorem ipsum dolor sit amet consectetur 
+       adipisicing elit. Corporis, dolores.
+    </p>
+
+    <p class="pcommon">
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Corporis, dolores.
+     </p>
+
+     <p class="pcommon">
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Ad, placeat?
+     </p>
+
+     <p class="class1 class2">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsa deserunt aliquid earum, omnis libero. Eaque quidem totam
+          distinctio nostrum dolorum autem fuga magnam repellendus, nulla itaque numquam porro qui.
+     </p>
+
+
+
+     <div class="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, eaque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, eaque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, eaque.
+        </p>
+        <section class="subparent">
+        <p>
+            is a sub parent p ---- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, eaque.
+        </p>
+    </section>
+     </div>
+
+
+
+</body>
+</html>
+
+

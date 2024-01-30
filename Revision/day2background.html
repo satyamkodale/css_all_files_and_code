@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<!-- Value	Description	CSS	Demo
+background-color	Specifies the background color to be used	1	
+background-image	Specifies ONE or MORE background images to be used	1	
+background-position	Specifies the position of the background images	1	
+background-size	Specifies the size of the background images	3	
+background-repeat	Specifies how to repeat the background images	1	
+background-origin	Specifies the positioning area of the background images	3	
+background-clip	Specifies the painting area of the background images	3	
+background-attachment	Specifies whether the background images are fixed or scrolls with the rest of the page -->
+    <style>
+
+
+       /* all in one property */
+        /* body {
+            background: lightblue url("img_tree.gif") no-repeat fixed center;
+            backgrund-color:blue;
+            background-img:url();
+            backgorund-repeat:no-repeat;
+            background-attachment:fixed;
+            backgorund-position:center;
+           // not there in short hand
+            background-size:contain;
+
+        } */
+
+        
+
+
+         .bgcolor {
+        
+            background-color: aqua;
+            width: 100px;
+            height: 200px;
+            background-image: url(images/day2/virat\ backgorund.jpg);
+            opacity: 0.5;
+
+            
+            
+         }
+
+         .bgimgdiv {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            
+         }
+         .bgimg {
+            height: 200px;
+            width: 200px;
+            /* if we style the image above to be half
+             its width (200 pixels) and same height (300 pixels), it will look wrong  */
+
+             /* If we use object-fit: cover; the image keeps its aspect 
+             ratio and fills the given dimension. The image will be clipped to fit: */
+
+             /* If we use object-fit: contain; the image keeps 
+             its aspect ratio, but is resized to fit within the given dimension: */
+
+            /* object-fit: contain; */
+            /* object-fit: cover; */
+        
+         }
+   
+.imgparisjpg {
+  width: 200px; 
+   height: 200px;
+  border:2px solid red;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+div.paris {
+width:800px;
+height:800px;
+ border:2px solid black;
+}
+
+.backgroundimg {
+  background-image:url(images/day2/parisjpg.jpeg);
+  background-attachment:fixed; 
+  /* background-attachment: scroll; */
+  /* by  default backgorund repeats  */
+  background-repeat: no-repeat;
+
+  background-position:center ; 
+  /* bottom top right */
+  
+  
+  /* background-size: auto;  Based on img size occupies the space if it fit it will fit at position*/
+  /* background-size: 800px 400px; */
+  background-size: cover;
+    /* background-size: contain; */ 
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y; */
+
+}
+         
+#background-blend-mode {
+  /* my code which is not working  */
+  /* width: 1000px;
+  height: 1000px;
+  background-repeat:  no-repeat ,no-repeat;
+  background-size:  auto,contain;
+  background-image:  url(images/day2/tree\ png.png) url(images/day2/nature\ background.jpeg);
+  background-blend-mode: overlay; */
+
+  /* w3 code 
+  background-blend-mode: normal|multiply|screen|overlay|darken
+  |lighten|color-dodge|saturation|color|luminosity;
+   #myDIV { 
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-blend-mode: saturation;
+} */
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- body {
+        background: lightblue url("img_tree.gif") no-repeat fixed center;
+      } -->
+
+      <!-- set all properties in one declaration -->
+
+
+
+
+      <div class="bgcolor">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita illum vel nulla,
+             voluptas officiis reiciendis dignissimos alias praesentium. Est.</p>
+      </div>
+
+      <div class="bgimgdiv">
+        <img class="bgimg"   src="images/day2/virat backgorund.jpg" alt="">
+      </div>
+      <br>
+
+
+      <div class="paris">
+        <img class="imgparisjpg"  src="images/day2/parisjpg.jpeg" alt="Paris" >
+        </div>
+
+
+        <div class="paris backgroundimg" >
+           
+        </div>
+
+        <div id="background-blend-mode">
+        <!-- <h1>hii</h1> -->
+        </div>
+      
+</body>
+</html>

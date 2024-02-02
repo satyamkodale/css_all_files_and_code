@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1 {
+            width: 800px;
+            height: auto;
+            border: 2px solid red;
+            /* margin-top:20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left:20px; */
+            margin: auto;
+              /* which center horizontally a current div which is a single div which dont have naibours   */
+              margin-bottom: 50px;
+
+        }
+        .child1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            /* margin: auto;  */
+            /* if display inline is not there margin auto makes horizontally center both element */
+            display: inline-block;
+            margin: 20px ;
+            padding: 10px;
+
+            
+        }
+
+        p {
+            border: 2px solid blueviolet;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .main2 {
+
+            width: 800px;
+            height: auto;
+            border: 2px solid red;
+            /* margin-top:20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left:20px; */
+
+            margin: auto;
+              /* which center horizontally a current div which is a single div which dont have naibours   */
+            margin-top: 20px ;
+
+        }
+        .child2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            /* margin: auto;  */
+            /* if display inline is not there margin auto makes horizontally center both element */
+            /* display: inline-block; */
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Margins are used to create space around elements, outside of any defined borders. -->
+
+    <div class="main1">
+        <div class="child1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, corrupti!
+        </div>
+        <div class="child1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, corrupti!
+        </div>
+
+        <p>it have margin bottom 50 </p>
+    </div>
+
+    
+    <div class="main2">
+        
+        <p>it have margin top 20 but it take greater value between 50 and 20  </p>
+        <div class="child2">
+            we are learning amrgin collapes  between top and bottom
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur accusamus
+    
+        </div>
+        <div class="child2">
+            In this example the h1 element has a bottom margin of
+             50px and the h2 element has a top margin of 20px. So,
+              the vertical margin between h1 and h2 should have been
+               70px (50px + 20px). However, due to margin collapse, the
+                actual margin ends up being 50px
+        </div>
+    </div>
+</body>
+</html>

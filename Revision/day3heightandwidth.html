@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        div.first {
+  height: auto;
+  /* height: 50px; */
+  /* width: 100%; creates problem when window becomes small than contant */
+  border: 1px solid #4CAF50;
+  max-width: 100%;
+  
+}
+
+div.second{
+    margin-top:50px;
+  height: 200px;
+  max-width: 50%;
+  background-color: powderblue;
+}
+
+
+div.third {
+    height: 100px;
+  width: 500px;
+  margin-top:20px ;
+  background-color: rgb(200, 42, 200);
+}
+
+div.forth {
+    height: 100px;
+  max-width: 500px;
+  margin-top:20px ;
+  background-color: rgb(200, 42, 200);
+}
+
+
+/* ============================================================ */
+
+div.parent {
+
+    margin: auto;
+    margin-top: 40px;
+    /* max-width: 500px; */
+    /* height: 500px; */
+    max-width: 100%;
+   height: auto;
+    border: 2px solid black;
+    
+}
+
+div.child {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+
+    
+    max-width: 300px;
+    
+    /* max-height: 100px; */
+    height: auto;
+    border: 2px solid red;
+}
+
+
+.maxwidthparent {
+
+    max-width: 50%;
+    border: 2px solid black;
+    margin: 10px;
+}
+.maxwidthchild {
+
+    max-width: 100%;
+    border: 2px solid red;
+    margin: 5px ;
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>The CSS height and width properties are used to set the height and width of an element</h2>
+
+    <div class="first">
+        This div element has a height of 50 pixels and a width of 100%.
+    </div>
+
+    <div class="second">
+        This div element has a height of 50 pixels and a width of 50%.
+    </div>
+
+     <div class="third">This div element has a height of 100px and a width of 500px.</div>
+
+     <h2>resize the window to see the differnce </h2>
+
+     <div class="forth">This div element has a max-height of 100px and a max-width of 500px.</div>
+
+
+
+
+
+     <div class="parent ">
+
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+             </div>
+        
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+             obcaecati quia nisi aspernatur
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+             obcaecati quia nisi aspernatur
+        </div>
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+             obcaecati quia nisi aspernatur minima placeat facere tempore, </div>
+        
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+             obcaecati quia nisi aspernatur
+        </div>
+     </div>
+
+
+     <div class="maxwidthparent">
+
+        <div class="maxwidthchild">
+
+        </div>
+      </div>
+
+</body>
+</html>

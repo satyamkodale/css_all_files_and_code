@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+      .lrautoimg {
+ 
+
+        border: 2px solid black;
+    
+       
+           }
+
+           .img {
+                display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 background-color: aqua;
+           }
+
+
+           .floatdiv {
+            border: 2px solid red;
+            height: 200px;
+            /* position: relative; */
+           }
+           .floatimg
+           {
+            
+            float: right;
+            /* position: absolute;
+            top: 0px;
+            right: 0px; */
+           }
+
+           div.clearfix {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+           .img2 {
+            float: right;
+            object-fit: cover;
+            border: 2px solid black;
+            border-radius: 70%;
+           }
+           .img3 {
+            float: left;
+            object-fit: cover;
+            border: 2px solid black;
+            border-radius: 70%;
+           }
+
+           .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+           }
+ 
+          
+
+</style>
+  
+</head>
+<body>
+    <div class="lrautoimg">
+        <img class="img" src="images/day2/parisjpg.jpeg" alt="">
+    </div>
+
+    <div class="floatdiv">
+        <p>Lorem ipsum, dolor sit amet c loonsectetur adipisicing elit. Nobis sunt enim, obcaecati quisquam esse nulla. Optio reiciendis explicabo rem voluptates.</p>
+        <img class="floatimg" src="images/day2/parisjpg.jpeg" alt="">
+    </div>
+
+    <div style="height: 200px; border: 2px solid red;"></div>
+
+    <div class="clearfix">
+        <div>
+        <img class="img2" src="images/day2/clearifix.jpg" alt="Pineapple" width="170" height="170"></div>
+         <div>
+        <img class="img3" src="images/day2/clearifix.jpg" alt="Pineapple" width="170" height="170"></div>
+        <div style="border: 2px solid plum;">
+            <p style="border: 2px solid rgb(27, 222, 219);">it can be without div but we used to check </p>
+        Lorem ipsum dolor sit amet, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit commodi officia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit perferendis voluptas
+         aut obcaecati sunt, molestiae repudiandae hic consectetur dolorem reiciendis? temporibus voluptatem
+          aliquid ad nobis voluptatibus quo, repellendus similique! consectetur adipiscing elit. Phasellus imperdiet...</div>
+      </div>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main1
+    {
+        border: 2px solid black;
+        text-align: center;
+    }
+    .sub1,.sub2 {
+        border: 2px solid red;
+        display: inline;
+        /* cant set width and height to element */
+    }
+
+    .main2
+    {
+        margin: 20px;
+        border: 2px solid rgb(74, 232, 6);
+        /* text-align: start;  end */
+        text-align: center;
+        /* its a trick to center the divs / ele  */
+        /* we have to put on parent text-align: prop */
+        
+    }
+    .sub3,.sub4 {
+        border: 2px solid red;
+        display: inline-block;
+        /* can set width and height to element */
+        width: 100px;
+
+
+    }
+
+    .main3
+    {
+        margin: 20px;
+        border: 2px solid rgb(180, 24, 211);
+        /* text-align: start;  end */
+        text-align: center;
+        /* its a trick to center the divs / ele  */
+        /* we have to put on parent text-align: prop */
+        
+    }
+    .sub5,.sub6,.sub7,.sub8 {
+        border: 2px solid rgb(222, 219, 39);
+        display: inline-block;
+        /* can set width and height to element */
+        width: 100px;
+
+
+    }
+
+    .sub7
+    {
+        display: none;
+    }
+
+
+    
+    .main4
+    {
+        margin: 20px;
+        border: 2px solid rgb(180, 24, 211);
+        /* text-align: start;  end */
+        text-align: center;
+        /* its a trick to center the divs / ele  */
+        /* we have to put on parent text-align: prop */
+        
+    }
+    .sub9,.sub10,.sub11,.sub12 {
+        border: 2px solid rgb(222, 219, 39);
+        display: inline-block;
+        /* can set width and height to element */
+        width: 100px;
+
+
+    }
+
+    .sub11
+    {
+        visibility: hidden;
+    }
+
+</style>
+
+
+<body>
+    <div class="main1">
+        <h2>display: inline we cant set height width of ele </h2>
+        <div class="sub1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+
+        </div>
+         
+    </div>
+
+    <div class="main2">
+        <h2>display: inline - block can set width and height </h2>
+        <div class="sub3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+        <div class="sub3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+         
+    </div>
+
+
+    <div class="main3">
+        <h2>putting div 7 to display : none property </h2>
+        <div class="sub5">
+            <h2>5</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub6">
+            <h2>6</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+        <div class="sub7">
+            <h2>7</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub8">
+            <h2>8</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+         
+    </div>
+
+
+    <div class="main4">
+        <h2>putting div 11 to visibility : hidden; property </h2>
+        <div class="sub9">
+            <h2>5</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub10">
+            <h2>6</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+        <div class="sub11">
+            <h2>7</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facere.
+        </div>
+        <div class="sub12">
+            <h2>8</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem.
+        </div>
+         
+    </div>
+</body>
+</html>

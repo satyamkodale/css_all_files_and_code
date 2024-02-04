@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.main {
+  position: relative;
+  top:500px;
+  width: 800px;
+  height: 400px;
+  border: 3px solid black;
+} 
+
+div.relative {
+  position: absolute;
+  bottom: 10px;/* div kuthun chalu hoil tyachya parent chya pasun 10 px pasun*/
+  right:0;
+  left:75%;/* div kuthun chalu hoil tyachya parent chya size chya 75% pasun*/
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top:75%;
+  right: 25%;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+
+.fixed {
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(12, 216, 223);
+    border: 2px solid black;
+    bottom: 0%;
+
+}
+
+nav {
+border: 2px solid black;
+position: sticky;
+top:0;
+background-color: rgb(235, 15, 195);
+}
+
+.ul
+{
+ list-style: none;   
+ text-align: center;
+}
+
+.ul li {
+    display: inline-block;
+    /* border: 2px solid rgb(18, 181, 240); */
+    padding: 5px;
+    margin-left:50px ;
+    background-color: rgb(49, 3, 37);
+    color: aliceblue;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+    <nav>
+        <ul class="ul">
+            <li>home</li>
+            <li>Sign in </li>
+            <li>Sign up</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="main">
+  <p>This div main</p>
+  <div class="relative">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+  </div>
+</div>
+
+<div class="fixed">
+    This div element has position: fixed;
+</div>
+
+</body>
+</html>
+
+
+

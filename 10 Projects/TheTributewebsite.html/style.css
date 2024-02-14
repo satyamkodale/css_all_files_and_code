@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    background-color: rgb(144, 206, 241) ;
+     /* height: 100vh; 
+     This property sets the exact height of the
+      element to be equal to 100% of the viewport height.
+       It means that the element will always have a height
+        equal to the height of the viewport, regardless of the content inside the element.
+If the content inside the element exceeds the viewport height,
+ the content may overflow, causing scrolling to appear on the page.*/
+ 
+    /* min-height: 100 vh; 
+    This property sets the minimum height of the element to be equal to 100% 
+    of the viewport height. It means that the element will expand vertically 
+    to accommodate its content if the content height exceeds the viewport height.
+If the content inside the element is less than the viewport height,
+the element will expand to fill the entire viewport height. 
+However, if the content is taller than the viewport, the
+ element's height will adjust to fit the content.
+    */
+    min-height: 100vh;
+
+    border: 5px solid black;
+
+}
+
+.content
+{
+    max-width:900px;
+    /* border: 2px solid red; */
+
+    margin: 0 auto;
+
+
+}
+
+.top_section
+{
+    margin-top: 100px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
+.top_section .image_container
+{
+    border-radius: 50%; 
+    overflow: hidden;
+    /* border: 2px solid green; */
+
+}
+ .image_container , img {
+    width: 300px;
+    height: 320px;
+
+}
+
+
+.top_section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.top_section h4 {
+    font-size: 30px;
+    text-align: end;
+    /* margin-bottom:50px;    */
+    /* my change margin-bottom :50px it works after align-items also  */
+
+} 
+
+
+
+
+

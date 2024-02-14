@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    display:flex;
+    flex-direction:row , column,row-reverse,column-reverse;
+   
+    
+
+
+    <style>
+    .imgflex
+    {
+       border: 2px solid black;
+       max-width: 30%;
+       height: 500px;
+    }
+
+    img
+    {
+        max-width: 100%;
+       height: 100%;
+       object-fit: cover;
+      
+    }
+    
+    .divmain1
+    {
+        max-width: 100%;
+        display: flex;
+        border: 2px solid red ;
+        /* flex-direction:  row; default  column; row-reverse; column-reverse*/
+        flex-direction: row;
+
+
+    }
+    .divchild
+    {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+       
+    }
+
+    
+    
+    .divmain2
+    {
+        max-width: 100%;
+        display: flex;
+        border: 2px solid red ;
+        /* flex-direction:  row; default  column; row-reverse; column-reverse*/
+        flex-direction: row;
+        /* flex-wrap: wrap; no-wrap wrap-reverse */
+        flex-wrap: wrap; 
+  
+     
+
+
+    }
+    .divchild2
+    {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    
+    }
+
+
+    .divmain3
+    {
+        max-width: 100%;
+        display: flex;
+        border: 2px solid red ;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        /* justify-content: center; space-around ; space-between ;
+         start; end; first baseline ; last baseline;  left; right;   */
+         justify-content: space-around;
+        
+  
+     
+
+
+    }
+    .divchild3
+    {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    
+    }
+
+
+
+    
+    .divmain4
+    {
+        max-width: 100%;
+        height: 800px;
+        display: flex;
+        border: 2px solid red ;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        /* justify-content: space-around; */
+        /* align-items:self-start; self-end; baseline; flex-start; 
+        flex-end ; first baseline;  last baseline; end; center; baseline; */
+       align-items: center;
+  
+     
+
+
+    }
+    .divchild4
+    {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        
+    
+    }
+    </style>
+ 
+
+</head>
+<body>
+
+    <div class="imgflex">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/0*YeaUsQyhXSL1TCTH.png" alt="">
+    </div>
+
+default flex and its behaviour
+    <div class="divmain1">
+        <div class="divchild">1</div>
+        <div class="divchild">2</div>
+        <div class="divchild">3</div>
+        <div class="divchild">4</div>
+         
+    </div>
+
+    flex-direction and flex-wrap used to define its behaviour whn window size reduced
+    
+    <div class="divmain2">
+        <div class="divchild2">1</div>
+        <div class="divchild2">2</div>
+        <div class="divchild2">3</div>
+        <div class="divchild2">4</div>
+        <div class="divchild2">5</div>
+     
+    </div>
+
+    justify-content talks about horizontal space --
+    <div class="divmain3">
+        <div class="divchild3">1</div>
+        <div class="divchild3">2</div>
+        <div class="divchild3">3</div>
+        <div class="divchild3">4</div>
+        <div class="divchild3">5</div>
+     
+    </div>
+    align-item talks about vertical space |
+    <div class="divmain4">
+        <div class="divchild4">1</div>
+        <div class="divchild4">2</div>
+        <div class="divchild4">3</div>
+        <div class="divchild4">4</div>
+        <div class="divchild4">5</div>
+     
+    </div>
+
+</body>
+</html>

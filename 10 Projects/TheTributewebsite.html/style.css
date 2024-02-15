@@ -77,6 +77,61 @@ However, if the content is taller than the viewport, the
 
 } 
 
+.about_section
+{
+    margin-top: 50px;
+    margin-bottom: 50px ;
+}
+
+.about_section h2 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+.about_section p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 100px;
+    word-spacing: 3px;
+    line-height: 30px;
+    margin: 10px;
+
+}
+
+.biography_section
+{
+    margin: 50px 0px;
+    
+
+
+}
+
+.biography_section h3 {
+    margin-bottom: 20px;
+    font-size: 50px;
+
+}
+
+.biography_section ul {
+    
+    margin-left: 20px;
+
+}
+
+.biography_section ul li {
+    margin: 8px;
+}
+
+.footer_section p{
+
+text-align: right;
+  
+}
+
+
+
+
+
 
 
 

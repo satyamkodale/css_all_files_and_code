@@ -1,0 +1,312 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+}
+.nav
+{
+  display: flex;
+  justify-content: space-between;
+    
+    background-color: #1f242d;
+
+  
+}
+
+.logo_div
+{
+
+   margin-left: 20px ;
+   margin-top:5px ;
+  max-height: 60px;
+  max-width: 60px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.logo_div img
+{
+  
+max-width: 100%;
+max-height: 100%;
+border-radius: 40%;
+
+}
+
+.ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  
+}
+
+
+.li
+{
+   
+    padding: 10px ;
+    /* border: 2px solid red; */
+    margin-left: 80px;
+    color: rgb(247, 239, 239);
+    /* background-color: darkgray; */
+  
+}
+.section_home
+{
+    background: url(section1bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    min-height:100vh;
+   position: relative;
+
+   background-attachment: fixed;
+
+}
+.heading
+{
+ position: absolute;
+ left: 3%;
+ top: 50%;
+ /* border: 2px solid red; */
+ 
+}
+.light
+{
+  color: #f9f6f6;
+}
+.intro
+{
+    text-transform:capitalize;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.resume
+{
+    font-size: 15px;
+    text-transform: capitalize;
+    position: absolute;
+    right: 0px;    
+    
+}
+.name
+{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+
+.section_aboutme
+{
+   /* margin: 20px; */
+   border: 2px solid black;
+   background-color: #1f242d;
+}
+
+.white
+{
+    color: aliceblue;
+}
+.aboutme_text
+{
+     text-align: center;
+     margin-bottom: 10px;
+     /* color: #f9f6f6; */
+     color: #00EEFF;
+}
+
+.aboutme_div
+{
+ 
+/* border: 2px solid red; */
+margin: 10px 20px;
+background-color: #f9f6f6;
+border-radius: 20px;
+}
+
+.aboutme_para
+{
+    color: #1f242d;
+    padding: 20px 60px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ letter-spacing: normal;
+ text-align: justify;
+  text-indent: 50px;
+}
+
+
+.projects
+{
+    background: url(Parallax4bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    min-height:100vh;
+   position: relative;
+
+   background-attachment: fixed;
+}
+.projects_heading
+{
+    background-color: #f9f6f6;
+color: #00EEFF;
+text-align: center;
+/* margin: 20px; */
+}
+
+.black
+{
+    color: #1f242d;
+}
+.projects_boxs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+
+}
+
+.project_box
+{
+    max-width: 30%;
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 10px;
+    background-color: #1f242d;
+
+   
+}
+
+.view_button
+{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #00EEFF;
+    border-radius: 5px;
+    border: none;
+    width: 25%;
+    /* color: #f9f6f6; */
+}
+
+
+.img
+{
+    width: 100%;
+    border-radius:10px ;
+}
+
+.description
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: normal;
+    text-align: justify;
+    padding: 10px;
+    /* background-color: #1f242d; */
+    /* color: #f9f6f6; */
+}
+
+.description_para
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: normal;
+    text-align: justify;
+    padding: 10px;
+    /* background-color: #1f242d; */
+    color: #faf2f2;
+}
+
+.contactme_heading
+{
+    background-color: #f9f6f6;
+    color: #00EEFF;
+    text-align: center;
+    /* margin:20px ; */
+}
+
+.contactme_container
+{
+    max-width: 50%;
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.formdiv
+{
+    /* border: 2px solid rgb(253, 249, 249); */
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    
+
+}
+.label
+{
+    width: 30%;
+    /* border: 2px solid red; */
+}
+.textfield
+{
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid green; */
+    border: 2px solid #00EEFF;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+.textarea
+{
+    width: 100%;
+    letter-spacing: 3px;
+    border: 2px solid #00EEFF;
+    border-radius: 10px;
+
+}
+
+.contactme
+{
+    background: url(contactme.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    min-height:100vh;
+   position: relative;
+
+   /* background-attachment: fixed; */
+}
+
+.send
+{
+    
+    font-size: 15px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 100%;
+    right: 0;
+     
+}

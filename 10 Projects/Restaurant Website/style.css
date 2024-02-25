@@ -5,12 +5,21 @@
     box-sizing: border-box;
 }
 
+.section_nav
+{
+    box-shadow: 5px 5px 5px rgb(70, 69, 69);
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 50;
+}
 nav
 {
     display: flex;
     justify-content: space-between ;
     align-items: center;
     /* flex-direction: column; */
+    
 
 }
 nav>.nav1
@@ -19,7 +28,7 @@ nav>.nav1
     /* border: 2px solid aqua; */
     display: flex;
     align-items: center;
-    width: 30%;
+    max-width: 30%;
     justify-content: space-around;
 }
 
@@ -78,10 +87,18 @@ nav > .nav2
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nav3
+{
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+}
+
 .section_home
 {
     height: 80vh;
     display: flex;
+    
 }
 
 .section_hero_img
@@ -111,46 +128,49 @@ nav > .nav2
 {
     
     display: flex;
-    width: 50%;
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     /* border: 2px solid black; */
-    align-items: center;
+    align-items: flex-start;
 }
 
 
 .discount_div
 {
   
-border: 2px solid black;
+/* border: 2px solid black; */
 }
 
 .discount_div >h2
 {
     font-size: 15px;
-    background-color:  #FFFF00;
-    border-radius: 10px;
+    background-color:  #149f39;
+    /* border-radius: 10px; */
     padding: 5px;
 }
 
 .hero_text_div
 {
-  text-align: center;
+  /* text-align: center; */
     /* border: 2px solid black; */
+    /* padding: 10px; */
+    margin-bottom:10px;
 }
 
 .hero_text_div > h1
 {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 
 }
 
 .hero_description 
 {
-    text-align: center;
+    /* text-align: center; */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
+    margin-bottom: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 /* border: 2px solid black; */
@@ -175,7 +195,435 @@ border: 2px solid black;
     background-color:#FFA500  ;
     border-radius: 5px;
     color: aliceblue;
-    margin: 15px;
+    margin-bottom: 15px 0;
     font-size: 20px;
+}
+
+.sectionoffer_headline
+{
+    font-size:35px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* margin: 10px; */
+    color: white;
+    background-color: black;
+}
+.section_offer
+{
+    max-width:100%;
+    min-width: 50vh;
+    /* border: 2px solid red; */
+}
+
+.offers_sectiondiv
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+}
+
+
+.offer
+{
+    width: 30%;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFE4C4;
+    color: #333333;
+}
+
+.offer_headline
+{
+    margin: 10px;
+}
+
+.card
+{
+   /* border: 2px solid black; */
+   border-radius: 5px ;
+}
+
+.section_populardishes
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    /* justify-content: center; not works bcoz we used direction coloumn */
+   align-items: center;
+}
+
+
+ .tag
+{
+    font-size:35px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   margin-top: 20px;
+    color: white;
+    background-color: black;
+    color: aliceblue;
+    background-color: black;
+    /* its used when tag is inside the section_popular  */
+    /* align-self: center; -> makes that individual div to center */
+}
+
+.grid
+{
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas:"I1 I1 I2  I3 " 
+                         "I1 I1 I2 I7" 
+                         "I4 I5 I6 I7";
+    max-width: 90%;
+
+}
+
+.gridimg
+{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.gridimg:hover
+{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+}
+.item1
+{
+    grid-area: I1;
+}
+.item2
+{
+    grid-area: I2;
+}
+.item3
+{
+    grid-area: I3;
+}
+.item4
+{
+    grid-area: I4;
+}
+.item5
+{
+    grid-area: I5;
+}
+.item6
+{
+    grid-area: I6;
+}
+.item7
+{
+    grid-area: I7;
+}
+
+
+.footer_container
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo_info
+{
+    display: flex;
+    flex-direction:column;
+    /* border: 2px solid black; */
+    max-width: 20%;
+
+}
+.logoaboutus
+{
+    max-width: 70%;
+
+    /* border: 2px solid green; */
+}
+.logo_img_aboutus
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mainlink
+{
+    width: 20%;
+}
+
+.mainlinkul 
+{
+    list-style: none;
+   
+
+}
+
+.mainlinkul > li
+{
+    margin-bottom: 15px;
+}
+.mainlinkul > li > a
+{
+    font-size: 20px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.support
+{
+    width: 20%;
+}
+
+.followus
+{
+    width: 20%;
+}
+
+.logos
+{
+    
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.sociallogo
+{
+    width: 20%;
+    font-size: 35px;
+}
+
+
+
+
+
+@media only screen and (max-width:1200px)
+{
+    .offer
+    {
+        width: 40%;
+        margin: 10px auto;
+        
+    }
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .hero_text_div > h1
+    {
+        font-size: 30px;
+    }
+    .offer
+    {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width : 650px)
+{
+    .logo
+    {
+        width: 50%;
+    }
+   
+    .nav1
+    {
+     /* border: 2px solid black; */
+     width: 20%;
+     justify-content: space-between;
+    }
+  
+    .logo_name
+    {
+      font-size: 15px;
+    }
+    .nav2
+    {
+        /* border: 2px solid red; */
+        width: 80%;
+    }
+  
+    .nav2_li > a
+    {
+         font-size: 15px;
+
+    }
+}
+
+@media only screen and (max-width:480px)
+{
+    .logo
+    {
+      width: 50%;
+    }
+    .logo_name
+    {
+        font-size: 10px;
+    }
+
+    .nav2_li > a
+    {
+         font-size: 10px;
+
+    }
+   
+    .section_hero_img
+    {
+        width: 70%;
+    }
+    .offer
+    {
+        width: 80%;
+        margin: 10px auto;
+        
+    }
+    .offer_headline
+    {
+        font-size: 15px;
+    }
+    .card
+    {
+        font-size:10px ;
+    }
+
+
+    .section_home
+    {
+        height: 100vh;
+        flex-direction: column;
+        /* margin: auto; */
+        /* border: 2px solid black; */
+    }
+
+    .section_hero_text
+    {
+       margin: auto;
+    }
+
+    .hero_text_div > h1
+    {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .discount_div >h2
+    {
+        font-size: 10px;
+    }
+    .hero_description 
+{
+   
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+
+}
+.hero_button
+{
+    font-size:10px ;
+    margin: 5px;
+}
+
+.footer_container
+{
+    justify-content: space-around;
+}
+
+.logo_info
+{
+    width: 40%;
+    /* border: 2px solid red ; */
+}
+.mainlink
+{
+    width: 40%;
+    /* border: 2px solid black; */
+}
+.support
+{
+    width: 40%;
+    /* border: 2px solid red; */
+}
+.followus
+{
+    width:40%;
+    /* border: 2px solid black; */
+}
+
+.logo_info_about
+{
+    font-size: 10px;
+}
+
+.mainlinkul > li> a
+{
+    font-size: 15px;
+}
+
+.sociallogo
+{
+    font-size: 20px;
+}
+
+}
+
+@media only screen and (max-width:380px)
+{
+
+   
+
+    .hero_text_div > h1
+    {
+        font-size: 10px;
+        margin: 5px;
+    }
+    .discount_div >h2
+    {
+        font-size: 7px;
+    }
+    .hero_description 
+{
+   
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7px;
+
+}
+.hero_button
+{
+    font-size:10px ;
+    margin: 5px;
+}
+    .logo
+    {
+      width: 50%;
+    }
+    .logo_name
+    {
+        font-size: 10px;
+    }
+
+    .section_hero_img
+    {
+        width: 100%;
+    }
+
+
+
 }
 

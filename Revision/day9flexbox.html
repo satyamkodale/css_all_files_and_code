@@ -114,10 +114,10 @@
         /* justify-content: space-around; */
         /* align-items:self-start; self-end; baseline; flex-start; 
         flex-end ; first baseline;  last baseline; end; center; baseline; */
-       align-items: center;
+       /* align-items: center; */
   
      
-
+       
 
     }
     .divchild4
@@ -129,6 +129,20 @@
         padding: 10px;
         
     
+    }
+
+    .divmain4 .aligndiv
+    {
+        /* align-self: flex-end; */
+        /* align-self:baseline ; */
+        /* align-self :self-end */
+        /* align-self:safe; */
+        /* align-items: baseline; */
+         /* align-self: flex-start; */
+        /* align-self: center; */
+         background-color: aqua;
+        
+
     }
     </style>
  
@@ -170,12 +184,13 @@ default flex and its behaviour
      
     </div>
     align-item talks about vertical space |
+    and in this i am applying align -self to specific 5 number div to align only that one div 
     <div class="divmain4">
         <div class="divchild4">1</div>
         <div class="divchild4">2</div>
         <div class="divchild4">3</div>
         <div class="divchild4">4</div>
-        <div class="divchild4">5</div>
+        <div class="divchild4  aligndiv">5</div>
      
     </div>
 

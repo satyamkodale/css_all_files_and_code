@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    /* flex-direction: column; */
+
+}
+nav>.nav1
+{
+    /* background-color: aqua; */
+    /* border: 2px solid aqua; */
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.logo
+{
+    width: 30%;
+    /* height: 100px; */
+    /* border: 2px solid black; */
+   
+}
+
+.logo_img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.logo_name
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+
+
+nav > .nav2
+{
+    /* border: 2px solid red; */
+    width: 70%;  
+     
+}
+
+
+.nav2_ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green;    */
+    /* flex-direction: column;  */
+}
+
+.nav2_li
+{
+    /* border: 2px solid black; */
+  
+    
+}
+.nav2_li > a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section_home
+{
+    height: 80vh;
+    display: flex;
+}
+
+.section_hero_img
+{
+    width: 50%;
+    /* border: 2px solid black; */
+    margin: auto;
+  
+
+}
+.hero_img_div
+{
+    max-width:100%;
+    text-align: center;
+    /* border: 2px solid red; */
+ 
+}
+.hero_img
+{
+    max-width: 100%;
+   max-height: 80vh;
+   
+
+}
+
+.section_hero_text
+{
+    
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black; */
+    align-items: center;
+}
+
+
+.discount_div
+{
+  
+border: 2px solid black;
+}
+
+.discount_div >h2
+{
+    font-size: 15px;
+    background-color:  #FFFF00;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hero_text_div
+{
+  text-align: center;
+    /* border: 2px solid black; */
+}
+
+.hero_text_div > h1
+{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.hero_description 
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+/* border: 2px solid black; */
+}
+
+.hero_buttondiv
+{
+
+}
+
+.hero_button
+{
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+     padding: 5px;
+    background-color:#FFA500  ;
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 15px;
+    font-size: 20px;
+}
+
